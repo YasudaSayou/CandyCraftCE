@@ -203,8 +203,8 @@ public class CBlocks {
 	public static final BlockEntry<StairBlock> STRAWBERRY_ICE_CREAM_STAIRS = stairBlock("strawberry_ice_cream_stairs", STRAWBERRY_ICE_CREAM::defaultBlockState).setProperties(STRAWBERRY_ICE_CREAM, null).save();
 	public static final BlockEntry<StairBlock> BLUEBERRY_ICE_CREAM_STAIRS = stairBlock("blueberry_ice_cream_stairs", BLUEBERRY_ICE_CREAM::defaultBlockState).setProperties(BLUEBERRY_ICE_CREAM, null).save();
 	public static final BlockEntry<DoorBlock> MARSHMALLOW_DOOR = create("marshmallow_door", (p) -> _doorBlock(p, BlockSetType.OAK)).setProperties(OAK_DOOR, null).save();
-	public static final BlockEntry<DoorBlock> LIGHT_MARSHMALLOW_DOOR = create("light_marshmallow_door", (p) -> _doorBlock(p, BlockSetType.DARK_OAK)).setProperties(MARSHMALLOW_DOOR, null).save();
-	public static final BlockEntry<DoorBlock> DARK_MARSHMALLOW_DOOR = create("dark_marshmallow_door", (p) -> _doorBlock(p, BlockSetType.BAMBOO)).setProperties(MARSHMALLOW_DOOR, null).save();
+	public static final BlockEntry<DoorBlock> LIGHT_MARSHMALLOW_DOOR = create("light_marshmallow_door", (p) -> _doorBlock(p, BlockSetType.BAMBOO)).setProperties(MARSHMALLOW_DOOR, null).save();
+	public static final BlockEntry<DoorBlock> DARK_MARSHMALLOW_DOOR = create("dark_marshmallow_door", (p) -> _doorBlock(p, BlockSetType.DARK_OAK)).setProperties(MARSHMALLOW_DOOR, null).save();
 	public static final BlockEntry<TrapDoorBlock> MARSHMALLOW_TRAPDOOR = create("marshmallow_trapdoor", p -> _trapDoorBlock(p, BlockSetType.OAK)).setProperties(OAK_TRAPDOOR, null).save();
 	public static final BlockEntry<TrapDoorBlock> LIGHT_MARSHMALLOW_TRAPDOOR = create("light_marshmallow_trapdoor", p -> _trapDoorBlock(p, BlockSetType.BAMBOO)).setProperties(MARSHMALLOW_TRAPDOOR, null).save();
 	public static final BlockEntry<TrapDoorBlock> DARK_MARSHMALLOW_TRAPDOOR = create("dark_marshmallow_trapdoor", p -> _trapDoorBlock(p, BlockSetType.DARK_OAK)).setProperties(MARSHMALLOW_TRAPDOOR, null).save();

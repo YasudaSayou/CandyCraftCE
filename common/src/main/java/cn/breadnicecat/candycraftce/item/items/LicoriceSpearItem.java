@@ -1,6 +1,7 @@
 package cn.breadnicecat.candycraftce.item.items;
 
 import cn.breadnicecat.candycraftce.entity.entities.misc.LicoriceSpear;
+import cn.breadnicecat.candycraftce.item.CItems;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Position;
@@ -45,10 +46,7 @@ public class LicoriceSpearItem extends TridentItem implements ProjectileItem {
 			.add(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_ID, -2.9F, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
 			.build();
 	}
-	
-	/**
-	 * Vanilla Copy
-	 */
+
 	@Override
 	public void releaseUsing(ItemStack stack, Level level, LivingEntity e, int timeCharged) {
 		if (e instanceof Player player) {
@@ -74,7 +72,6 @@ public class LicoriceSpearItem extends TridentItem implements ProjectileItem {
 								}
 							}
 						}
-
 						player.awardStat(Stats.ITEM_USED.get(this));
 						if (f > 0.0F) {
 							float f7 = player.getYRot();
@@ -92,7 +89,6 @@ public class LicoriceSpearItem extends TridentItem implements ProjectileItem {
 								float f6 = 1.1999999F;
 								player.move(MoverType.SELF, new Vec3(0.0, 1.1999999F, 0.0));
 							}
-
 							level.playSound(null, player, holder.value(), SoundSource.PLAYERS, 1.0F, 1.0F);
 						}
 					}
@@ -100,7 +96,12 @@ public class LicoriceSpearItem extends TridentItem implements ProjectileItem {
 			}
 		}
 	}
-	
+
+	@Override
+	public boolean isValidRepairItem(ItemStack stack, ItemStack material) {
+		return material.is(CItems.LICORICE.get());
+	}
+
 	@Override
 	public @NotNull Projectile asProjectile(Level level, Position pos, ItemStack stack, Direction direction) {
 		LicoriceSpear spear = new LicoriceSpear(level, pos.x(), pos.y(), pos.z(), stack.copyWithCount(1));

@@ -133,11 +133,11 @@ public class CItems {
 	public static final ItemEntry<EmblemItem> CRANBERRY_EMBLEM = createEmblem("cranberry_emblem").save();
 	public static final ItemEntry<EmblemItem> NESSIE_EMBLEM = createEmblem("nessie_emblem").save();
 	public static final ItemEntry<EmblemItem> SUGUARD_EMBLEM = createEmblem("suguard_emblem").save();
-	public static final ItemEntry<ForkItem> FORK = create("fork", ForkItem::new).setProperties(new Properties().stacksTo(1).durability(200)).save();
+	public static final ItemEntry<ForkItem> FORK = create("fork", ForkItem::new).setProperties(new Properties().stacksTo(1).durability(200).component(DataComponents.TOOL, MaceItem.createToolProperties())).save();
 	
 	public static final ItemEntry<HoneycombArrowItem> HONEYCOMB_ARROW = create("honeycomb_arrow", HoneycombArrowItem::new).save();
-	public static final ItemEntry<CaramelBowItem> CARAMEL_BOW = create("caramel_bow", CaramelBowItem::new).setProperties(new Properties().stacksTo(1).durability(384)).save();
-	public static final ItemEntry<LicoriceSpearItem> LICORICE_SPEAR = create("licorice_spear", LicoriceSpearItem::new).setProperties(new Properties().stacksTo(1).durability(300).attributes(LicoriceSpearItem.createAttributes()).component(DataComponents.TOOL, TridentItem.createToolProperties())).save();
+	public static final ItemEntry<CaramelBowItem> CARAMEL_BOW = create("caramel_bow", CaramelBowItem::new).setProperties(new Properties().durability(384)).save();
+	public static final ItemEntry<LicoriceSpearItem> LICORICE_SPEAR = create("licorice_spear", LicoriceSpearItem::new).setProperties(new Properties().durability(300).attributes(LicoriceSpearItem.createAttributes()).component(DataComponents.TOOL, TridentItem.createToolProperties())).save();
 	//HELPER.single(CARAMEL_CROSSBOW, ItemCaramelCrossbow::new);
 	
 	public static final ItemEntry<StandingAndWallBlockItem> HONEYCOMB_TORCH_ITEM = create(HONEYCOMB_TORCH.getName(), p -> new StandingAndWallBlockItem(HONEYCOMB_TORCH.get(), WALL_HONEYCOMB_TORCH.get(), p, Direction.DOWN)).save();
