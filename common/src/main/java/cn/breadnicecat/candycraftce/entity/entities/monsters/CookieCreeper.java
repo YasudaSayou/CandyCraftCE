@@ -49,20 +49,16 @@ public class CookieCreeper extends Creeper {
 		}
 	}
 
-	private void usePlayerItem(Player player, InteractionHand hand, ItemStack stack) {
-		stack.consume(1, player);
-	}
-
 	@Override
 	protected @NotNull InteractionResult mobInteract(Player player, InteractionHand hand) {
 		ItemStack stack = player.getItemInHand(hand);
 		if (stack.is(Items.COOKIE)) {
-			usePlayerItem(player, hand, stack);
+			stack.consume(1, player);
 			ignite();
 			return InteractionResult.sidedSuccess(player.level().isClientSide);
 		}
 		if (stack.is(CItems.LOLLIPOP.get())) {
-			usePlayerItem(player, hand, stack);
+			stack.consume(1, player);
 			superIgnite();
 			return InteractionResult.sidedSuccess(player.level().isClientSide);
 		}

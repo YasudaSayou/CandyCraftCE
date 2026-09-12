@@ -1,7 +1,6 @@
 package cn.breadnicecat.candycraftce.item.items;
 
 import cn.breadnicecat.candycraftce.item.CEnchantments;
-import cn.breadnicecat.candycraftce.item.CTiers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -13,7 +12,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
@@ -32,10 +30,10 @@ import static cn.breadnicecat.candycraftce.block.CBlockTags.BT_SUGARY;
  * @author <a href="https://github.com/Bread-Nicecat">Bread_NiceCat</a>
  * <p>
  */
-public class ForkItem extends TieredItem {
+public class ForkItem extends Item {
 
 	public ForkItem(Properties properties) {
-		super(CTiers.PEZ, properties);
+		super(properties);
 	}
 
 	@Override
@@ -74,12 +72,22 @@ public class ForkItem extends TieredItem {
 	}
 
 	@Override
-	public boolean hurtEnemy(ItemStack stack, LivingEntity entity, LivingEntity entity2) {
+	public int getEnchantmentValue() {
+		return 10;
+	}
+
+	@Override
+	public boolean isValidRepairItem(ItemStack stack, ItemStack material) {
+		return material.is(CItems.PEZ.get());
+	}
+
+	@Override
+	public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
 		return true;
 	}
 
 	@Override
-	public void postHurtEnemy(ItemStack stack, LivingEntity entity, LivingEntity entity2) {
-		stack.hurtAndBreak(1, entity2, EquipmentSlot.MAINHAND);
+	public void postHurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+		stack.hurtAndBreak(1, attacker, EquipmentSlot.MAINHAND);
 	}
 }
