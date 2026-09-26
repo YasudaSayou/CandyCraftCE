@@ -23,13 +23,16 @@ public class HoneycombArrowItem extends ArrowItem {
 	public HoneycombArrowItem(Properties properties) {
 		super(properties);
 	}
-	
+
 	@Override
-	public @NotNull Projectile asProjectile(Level level, Position pos, ItemStack stack, Direction direction) {
-		return new CaramelArrow(pos.x(), pos.y(), pos.z(), level, stack, null);
-	}
-	
 	public @NotNull AbstractArrow createArrow(Level level, ItemStack ammo, LivingEntity shooter, @Nullable ItemStack weapon) {
 		return new CaramelArrow(shooter, level, ammo.copyWithCount(1), weapon);
+	}
+
+	@Override
+	public @NotNull Projectile asProjectile(Level level, Position pos, ItemStack stack, Direction direction) {
+		CaramelArrow arrow = new CaramelArrow(pos.x(), pos.y(), pos.z(), level, stack.copyWithCount(1), null);
+		arrow.pickup = AbstractArrow.Pickup.ALLOWED;
+		return arrow;
 	}
 }

@@ -19,6 +19,18 @@
       "candycraftce:cd-4"
     ]
   },
+  "gummy_ball_throw": {
+    "sounds": [
+      "random/bow"
+    ],
+    "subtitle": "subtitles.candycraftce.entity.gummy_ball_throw"
+  },
+  "gummy_ball_heavy_throw": {
+    "sounds": [
+      "mob/ghast/fireball4"
+    ],
+    "subtitle": "subtitles.candycraftce.entity.gummy_ball_throw"
+  },
   "jelly_dig": {
     "sounds": [
       "candycraftce:jelly1",
