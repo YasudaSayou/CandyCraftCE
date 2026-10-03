@@ -42,13 +42,13 @@ jobs:
         run: ./gradlew ${{ matrix.loader }}:build
 
       - name: Upload
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: ${{ matrix.loader }}
           path: ${{ matrix.loader }}/build/libs/*.jar
 
       - name: Upload-slim
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: ${{ matrix.loader }}-slim
           path: |

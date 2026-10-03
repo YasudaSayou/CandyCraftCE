@@ -1,11 +1,9 @@
 package cn.breadnicecat.candycraftce.entity;
 
 import cn.breadnicecat.candycraftce.block.CBlockTags;
-import cn.breadnicecat.candycraftce.entity.entities.misc.CaramelArrow;
-import cn.breadnicecat.candycraftce.entity.entities.misc.LicoriceSpear;
+import cn.breadnicecat.candycraftce.entity.entities.misc.*;
 import cn.breadnicecat.candycraftce.entity.entities.mobs.*;
-import cn.breadnicecat.candycraftce.entity.entities.monsters.CookieCreeper;
-import cn.breadnicecat.candycraftce.entity.entities.monsters.ExplorableJelly;
+import cn.breadnicecat.candycraftce.entity.entities.monsters.*;
 import cn.breadnicecat.candycraftce.entity.models.*;
 import cn.breadnicecat.candycraftce.entity.renderers.*;
 import cn.breadnicecat.candycraftce.utils.CLogUtils;
@@ -132,6 +130,10 @@ public class CEntityTypes {
 	public static final EntityEntry<CaramelArrow> CARAMEL_ARROW = CEntityBuilder.create("caramel_arrow", CaramelArrow.class, CaramelArrow::new, MISC)
 			.sized(0.5f, 0.5f)
 			.client(b -> b.setRenderer(RendererCaramelArrow::new))
+			.save();
+	public static final EntityEntry<GummyBall> GUMMY_BALL = CEntityBuilder.create("gummy_ball", GummyBall.class, GummyBall::new, MISC)
+			.sized(0.5f, 0.5f)
+			.client(b -> b.setRenderer(RendererGummyBall::new))
 			.save();
 	public static final EntityEntry<LicoriceSpear> LICORICE_SPEAR = CEntityBuilder.create("licorice_spear", LicoriceSpear.class, LicoriceSpear::new, MISC)
 			.sized(0.5f, 0.5f)

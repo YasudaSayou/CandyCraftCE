@@ -4,6 +4,7 @@ import cn.breadnicecat.candycraftce.CandyCraftCE;
 import cn.breadnicecat.candycraftce.block.CBlocks;
 import cn.breadnicecat.candycraftce.entity.CEntityTypes;
 import cn.breadnicecat.candycraftce.entity.EntityEntry;
+import cn.breadnicecat.candycraftce.entity.entities.mobs.CandyCanePig;
 import cn.breadnicecat.candycraftce.item.items.*;
 import cn.breadnicecat.candycraftce.item.items.iidebug.IIDebugItem;
 import cn.breadnicecat.candycraftce.sound.CJukeboxSound;
@@ -73,7 +74,7 @@ public class CItems {
 	
 	public static final ItemEntry<Item> COTTON_CANDY = create("cotton_candy").setFood(1, 1f).save();
 	public static final ItemEntry<Item> GUMMY = create("gummy").setFood(1, 1f, p -> p.effect(new MobEffectInstance(MobEffects.CONFUSION, (int) (10 * TickUtils.SEC2TICK)), 0.8f)).save();
-	public static final ItemEntry<Item> GUMMY_BALL = create("gummy_ball").save();
+	public static final ItemEntry<GummyBallItem> GUMMY_BALL = create("gummy_ball", GummyBallItem::new).save();
 	public static final ItemEntry<Item> HOT_GUMMY = create("hot_gummy").setFood(2, 2f).save();
 	public static final ItemEntry<Item> CHOCOLATE_COIN = create("chocolate_coin").setFood(5, 10f, p -> p.effect(new MobEffectInstance(MobEffects.GLOWING, (int) (5 * TickUtils.SEC2TICK)), 1f)).save();
 	public static final ItemEntry<Item> NOUGAT_POWDER = create("nougat_powder").save();
@@ -133,6 +134,9 @@ public class CItems {
 	public static final ItemEntry<EmblemItem> NESSIE_EMBLEM = createEmblem("nessie_emblem").save();
 	public static final ItemEntry<EmblemItem> SUGUARD_EMBLEM = createEmblem("suguard_emblem").save();
 	public static final ItemEntry<ForkItem> FORK = create("fork", ForkItem::new).setProperties(new Properties().stacksTo(1).durability(200).component(DataComponents.TOOL, MaceItem.createToolProperties())).save();
+	public static final ItemEntry<FoodOnAStickItem<CandyCanePig>> DRAGIBUS_ON_A_STICK = create("dragibus_on_a_stick", p -> new FoodOnAStickItem<>(p.durability(25), CEntityTypes.CANDY_CANE_PIG.get(), 7)).save();
+	public static final ItemEntry<JellyWandItem> JELLY_WAND = create("jelly_wand", JellyWandItem::new).setProperties(new Properties().stacksTo(1).rarity(Rarity.UNCOMMON)).save();
+	public static final ItemEntry<JumpWandItem> JUMP_WAND = create("jump_wand", JumpWandItem::new).setProperties(new Properties().stacksTo(1).rarity(Rarity.UNCOMMON)).save();
 	
 	public static final ItemEntry<HoneycombArrowItem> HONEYCOMB_ARROW = create("honeycomb_arrow", HoneycombArrowItem::new).save();
 	public static final ItemEntry<CaramelBowItem> CARAMEL_BOW = create("caramel_bow", CaramelBowItem::new).setProperties(new Properties().durability(384)).save();

@@ -59,7 +59,7 @@ public class CaramelArrow extends AbstractArrow {
 	@Override
 	protected void doPostHurtEffects(LivingEntity living) {
 		super.doPostHurtEffects(living);
-		if (!level().isClientSide()){
+		if (!level().isClientSide) {
 			int lvl = EnchantmentHelper.getItemEnchantmentLevel(
 				CEnchantments.getHolder(CEnchantments.HONEYCOMB_GLUE, this.level().registryAccess()), this.getWeaponItem()
 			);
