@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "/": {
+      "item": "candycraftce:marshmallow_stick"
+    },
+    "X": {
+      "item": "minecraft:string"
+    },
+    "#": {
+      "item": "candycraftce:dragibus"
+    }
+  },
+  "pattern": [
+    "  /",
+    " /x",
+    "/ #"
+  ],
+  "result": {
+    "count": 1,
+    "id": "candycraftce:dragibus_on_a_stick"
+  }
+}
