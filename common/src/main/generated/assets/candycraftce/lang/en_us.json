@@ -327,13 +327,13 @@
   "jukebox_song.candycraftce.cd_o": "J.D.K. - 鉄橋を越えて",
   "mod.candycraftce": "CandyCraft CE",
   "subtitles.candycraftce.entity.gummy_ball_throw": "Gummy Ball flies",
-  "tooltip.candycraftmod.chewing_gum_emblem": "Lets you walk normally on chewing gum",
-  "tooltip.candycraftmod.cranberry_emblem": "The dawn heals you",
-  "tooltip.candycraftmod.emblem": "Collect different emblems to awaken CandyCraft's endgame",
-  "tooltip.candycraftmod.gingerbread_emblem": "Gingerbread villagers and candy cane pigs are no longer afraid",
-  "tooltip.candycraftmod.honeycomb_emblem": "Lets you hear voices from underground villages",
-  "tooltip.candycraftmod.jelly_emblem": "Reduces fall damage by 30%",
-  "tooltip.candycraftmod.sky_emblem": "Protects you from falling out of sky dungeons",
-  "tooltip.candycraftmod.suguard_emblem": "Reduces arrow damage by 20%",
-  "tooltip.candycraftmod.nessie_emblem": "Water slowly heals you"
+  "tooltip.candycraftce.chewing_gum_emblem": "Lets you walk normally on chewing gum",
+  "tooltip.candycraftce.cranberry_emblem": "The dawn heals you",
+  "tooltip.candycraftce.emblem": "Collect different emblems to awaken CandyCraft's endgame",
+  "tooltip.candycraftce.gingerbread_emblem": "Gingerbread villagers and candy cane pigs are no longer afraid",
+  "tooltip.candycraftce.honeycomb_emblem": "Lets you hear voices from underground villages",
+  "tooltip.candycraftce.jelly_emblem": "Reduces fall damage by 30%",
+  "tooltip.candycraftce.sky_emblem": "Protects you from falling out of sky dungeons",
+  "tooltip.candycraftce.suguard_emblem": "Reduces arrow damage by 20%",
+  "tooltip.candycraftce.nessie_emblem": "Water slowly heals you"
 }
