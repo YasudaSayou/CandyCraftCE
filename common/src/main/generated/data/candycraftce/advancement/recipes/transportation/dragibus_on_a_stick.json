@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dragibus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "candycraftce:dragibus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "candycraftce:dragibus_on_a_stick"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dragibus"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "candycraftce:dragibus_on_a_stick"
+    ]
+  }
+}

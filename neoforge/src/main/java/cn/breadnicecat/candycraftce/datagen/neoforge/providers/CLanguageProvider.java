@@ -36,7 +36,6 @@ import java.util.function.Function;
 import static cn.breadnicecat.candycraftce.block.CBlocks.*;
 import static cn.breadnicecat.candycraftce.entity.CEntityTypes.CRANFISH;
 import static cn.breadnicecat.candycraftce.entity.CEntityTypes.*;
-import static cn.breadnicecat.candycraftce.item.CItems.LICORICE_SPEAR;
 import static cn.breadnicecat.candycraftce.item.CItems.*;
 import static cn.breadnicecat.candycraftce.sound.CJukeboxSound.*;
 import static cn.breadnicecat.candycraftce.utils.CommonUtils.check;
@@ -78,7 +77,7 @@ public class CLanguageProvider implements DataProvider {
 		addItemById(SUGAR_CRYSTAL, "冰糖");
 		addItemById(COTTON_CANDY, "棉花糖");
 		addItemById(GUMMY, "软糖");
-		addItemById(GUMMY_BALL, "软糖");
+		addItemById(CItems.GUMMY_BALL, "软糖");
 		addItemById(HOT_GUMMY, "熟软糖");
 		addItemById(CHOCOLATE_COIN, "巧克力币");
 		addItemById(NOUGAT_POWDER, "牛轧糖");
@@ -158,7 +157,7 @@ public class CLanguageProvider implements DataProvider {
 		addItemById(MAGICAL_LEAF, "魔法树叶");
 		addItemById(FORK, "叉子");
 		addItem(IIDEBUG, "I 爱 DEBUG !!!", null);
-		addItemById(LICORICE_SPEAR, "盐甘草糖矛");
+		addItemById(CItems.LICORICE_SPEAR, "盐甘草糖矛");
 		addItemById(CRANFISH_BUCKET, "蔓越莓鱼桶");
 		/*=======================Blocks=======================*/
 		addBlockById(SUGAR_BLOCK, "糖块");
