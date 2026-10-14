@@ -1,6 +1,7 @@
 # Candycraft Community Edition 1.21
 
 <hr>
+
 ## Languages
 
 [English][[简体中文]](README_cn.md)
@@ -8,6 +9,7 @@
 [![star](https://gitee.com/Bread-NiceCat/candycraftce/badge/star.svg?theme=dark)](https://gitee.com/Bread-NiceCat/candycraftce/stargazers)
 
 <hr>
+
 ## Licence
 
 - The mod *resource* is public but not allowed to be used without permission. [ARR] All rights reserved.
