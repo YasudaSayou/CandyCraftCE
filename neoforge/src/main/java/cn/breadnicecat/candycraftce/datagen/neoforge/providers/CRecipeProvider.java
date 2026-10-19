@@ -71,7 +71,7 @@ public class CRecipeProvider extends RecipeProvider {
 				.pattern("## ").define('#', have(WAFFLE_NUGGET))
 				.pattern("## ")
 				.unlockedBy(hasn(), has()).save(writer, id());
-		furnace(def(CRANFISH_COOKED)).ingredient(CRANFISH).exp(2f).save(writer, id());
+		furnace(def(COOKED_CRANFISH)).ingredient(CRANFISH).exp(2f).save(writer, id());
 		shaped(TOOLS, def(FORK))
 				.pattern(" / ").define('/', have(PEZ))
 				.pattern("/  ")

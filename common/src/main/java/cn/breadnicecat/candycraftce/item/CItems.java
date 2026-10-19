@@ -91,7 +91,7 @@ public class CItems {
 	public static final ItemEntry<Item> CANDIED_CHERRY_LEAF = create("candied_cherry_leaf").setFood(1, 1f).save();
 	public static final ItemEntry<Item> MAGICAL_LEAF = create("magical_leaf").setFood(1, 1f).save();
 	public static final ItemEntry<Item> CRANFISH = create("cranfish").setFood(2, 1f, p -> p.effect(new MobEffectInstance(MobEffects.WATER_BREATHING, (int) (60 * TickUtils.SEC2TICK)), 1f)).save();
-	public static final ItemEntry<Item> CRANFISH_COOKED = create("cranfish_cooked").setFood(4, 4f).save();
+	public static final ItemEntry<Item> COOKED_CRANFISH = create("cooked_cranfish").setFood(4, 4f).save();
 	public static final ItemEntry<Item> CRANFISH_SCALE = create("cranfish_scale").save();
 	public static final ItemEntry<ItemNameBlockItem> DRAGIBUS = create("dragibus", (p) -> new ItemNameBlockItem(DRAGIBUS_CROPS.get(), p)).setFood(2, 2f).save();
 	public static final ItemEntry<ItemNameBlockItem> LOLLIPOP_SEEDS = create("lollipop_seeds", (p) -> new ItemNameBlockItem(LOLLIPOP_STEM.get(), p)).setFood(1, 0f).save();

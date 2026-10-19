@@ -90,7 +90,7 @@ public class CLanguageProvider implements DataProvider {
 		addItemById(LOLLIPOP, "棒棒糖");
 		addItemById(CRANFISH_SCALE, "蔓越莓鱼鱼鳞");
 		addItemById(CItems.CRANFISH, "蔓越莓鱼");
-		addItem(CRANFISH_COOKED, "Cooked Cranfish", "烤蔓越莓鱼");
+		addItem(COOKED_CRANFISH, "Cooked Cranfish", "烤蔓越莓鱼");
 		addItemById(JELLY_SENTRY_KEY, "果冻守卫的钥匙");
 		addItemById(JELLY_BOSS_KEY, "果冻国王的钥匙");
 		addItem(RECORD_1, "Jelly Queen's Secret Record", "果冻皇后的私藏唱片");
