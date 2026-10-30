@@ -1,20 +1,19 @@
 {
   "criteria": {
-    "travel_to_dim": {
+    "sugar_block": {
       "conditions": {
-        "to": "candycraftce:candyland"
+        "recipe_id": "candycraftce:sugar_block"
       },
-      "trigger": "minecraft:changed_dimension"
+      "trigger": "minecraft:recipe_crafted"
     }
   },
   "display": {
     "background": "candycraftce:textures/block/chocolate_stone.png",
-    "frame": "goal",
     "description": {
       "translate": "advancements.candycraftce.root.desc"
     },
     "icon": {
-      "id": "candycraftce:marshmallow_log"
+      "id": "candycraftce:sugar_block"
     },
     "title": {
       "translate": "mod.candycraftce"
